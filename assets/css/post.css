@@ -1,0 +1,34 @@
+.post__wrapper {
+  margin: 3rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post__container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.post__wrapper-img {
+  width: 100%;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+.post__wrapper-img img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .post__wrapper {
+    margin: 3rem 1rem;
+  }
+  .post__container {
+    width: 100%;
+  }
+}
+.post__wrapper-content p {
+  text-align: left;
+}
