@@ -1,229 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sokunmaru</title>
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/root.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/post.css">
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/post.css" />
     <!-- awesomefont -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <!-- js -->
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header flex__col" id="header">
-        <a href="index.html" class="logo">
-            The Sokunmaru Times
-        </a>
+      <a href="index.html" class="logo"> The Sokunmaru Times </a>
 
-        <div class="notification">
-            <div class="notification__date flex__row">
-                <div>March <strong>08</strong>, 2022</div>
-                <div>28°C <span>29° 14°</span></div>
-            </div>
+      <div class="notification">
+        <div class="notification__date flex__row">
+          <div>March <strong>08</strong>, 2022</div>
+          <div>28°C <span>29° 14°</span></div>
         </div>
+      </div>
 
-        <nav class="nav flex__row">
-            <a href="index.html" class="home__btn">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <div class="flex__row">
-                <i class='fa fa-moon change-theme' id="theme-button"></i>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__menu-data flex__row">
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#">World</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#">Politics</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#Contact">Business</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Opinion</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Tech</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Science</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Health</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Sports</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Arts</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Books</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Style</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__item-link" href="#About">Food</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav__buttons">
-
-                <div class="nav__btn-close" id="nav-btn-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="nav__btn-open" id="nav-btn-open">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-            <a href="#" class="scrolltop" id="scroll-top">
-                <i class="fa-solid fa-angle-up scrolltop__icon"></i>
-            </a>
+      <nav class="nav flex__row">
+        <a href="index.html" class="home__btn">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <div class="flex__row">
+          <i class="fa fa-moon change-theme" id="theme-button"></i>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__menu-data flex__row">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">World</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">Politics</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#Contact">Business</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Opinion</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Tech</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Science</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Health</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Sports</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Arts</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Books</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Style</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#About">Food</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__buttons">
+          <div class="nav__btn-close" id="nav-btn-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="nav__btn-open" id="nav-btn-open">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <a href="#" class="scrolltop" id="scroll-top">
+        <i class="fa-solid fa-angle-up scrolltop__icon"></i>
+      </a>
     </header>
     <div class="post__wrapper">
-                <section class="post__container">
-                    <h1>Ukraine Live Updates: <br /><strong>Top Envoys Fail to Make Progress Toward Ending War</strong></h1>
-                    <div class="post__wrapper-img">
-                        <img src="assets/images/merlin_203538099_e118c7ef-7e14-4b2b-8260-6e5cb8ebce09-superJumbo.webp" alt="" />
-                    </div>
-                    <div class="page__wrapper-content">
-                    <p>The fight for the Black Sea port could influence the outcome of the war and affect regional security, experts say.</p>
-                    <p>Two weeks into Russia’s war in Ukraine, Kyiv’s forces are preparing for a potential attack by Moscow’s troops on the historic port city of Odesa on the Black Sea.</p>
-                    <p>Situated 300km (186 miles) west of the Russian-annexed Crimean peninsula, the city is seen as a strategic asset by both Ukraine and Russia – and its fall would have significant repercussions, not only for the two countries, but also for the wider Black Sea region, experts warn.</p>
-                    <p>Russian troops, advancing west of Crimea, have already taken the port city of Kherson and arrived at Mykolaiv, just 120km (75 miles) east of Odesa. Russian navy ships have been spotted close to Ukrainian territorial waters, raising fears of a possible attack from the sea.</p>
-                    <p>On Sunday, Ukrainian President Volodymyr Zelenskyy said the Russian army is planning a violent assault on the city, calling it an “historical crime”. Earlier last week, he dismissed the civilian governor of Odesa province, Serhiy Hrynevetsky, and replaced him with Maksym Marchenko, an army colonel and former leader of the controversial Aidar battalion, which has fought in the Donbas region in Ukraine’s east since 2014.</p>
-                    <p>The Ukrainian military has already established defensive positions across Odesa, imposed a curfew and set up roadblocks at all entrances to the city of one million people. The ports have been closed to commercial shipping, while the evacuation of civilians has begun.</p>
-                    <h3>‘A pivotal lifeline to overseas’</h3>
-                    <p>Odesa is of strategic military and economic importance to Ukraine. After losing its naval base in Sevastopol following the annexation of Crimea in 2014, the Ukrainian navy moved its headquarters there.</p>
-                    <p>Its three ports also play an important role in the economy of the country. Some 70 percent of all Ukrainian imports and exports are in the form of sea cargo – and Odesa handles about 65 percent of that.</p>
-                    <br />
-                    <p>“[For Ukraine,] Odesa represents a pivotal lifeline to overseas,” Alexey Muraviev, associate professor of national security and strategic studies at Curtin University, told Al Jazeera. “If Russia seizes Odesa, it will effectively cut off Ukraine from overseas trade and military aid.”</p>
-                    <p>The loss of the port city could have significant ramifications for Ukraine and its war effort and give Russia a strategic advantage. Ukraine does not have any other large ports to rely on in case it loses control of its third largest city, allowing Russia to effectively dominate the whole of the northern Black Sea coast.</p>
-                    <p>“In the context of the Russia-Ukraine war, the battle for Odesa would play one of the key roles in determining the future political outcome of the current conflict,” Muraviev said. “For Russia, the complete control of the Ukraine’s Black Sea and the Sea of Azov coasts may [be more important] than the seizure of Kharkiv or western Ukraine combined.”</p>
-                    <h3>‘They want Odesa intact’</h3>
-                    <p>Capturing Odesa would also have a particular symbolic significance, given the important status it holds in Russian culture and history.</p>
-                    <p>Founded in 1794 by Russian Empress Catherine the Great, Odesa became a crucial seaport and a cosmopolitan urban centre, home not only to Russians and Ukrainians, but also to Armenian, Bulgarian, Greek, Jewish and other communities. With its ornate architecture designed by Italian artists and rich cultural life, the city turned into one of the symbols of Russian imperial prestige and power.</p>
-                    <p>The local authorities have expressed hope that the port city’s historical importance could spare it from the destructive aerial assaults other Ukrainian cities have experienced.</p>
-                    <p>“They want Odesa intact, Odesa’s infrastructure, architecture and strategic meaning. They want all of those undamaged. That’s why I think Odesa will be subject to a special operation,” Mayor Gennadiy Trukhanov told the US’s Public Broadcasting Service.</p>
-                    <p>The city is also home to a sizeable ethnic Russian community, a factor that some Russian observers have claimed could help a military attempt to capture the city.</p>
-                </div>
-                </section>
+      <section class="post__container">
+        <h1>
+          Ukraine Live Updates: <br /><strong
+            >Top Envoys Fail to Make Progress Toward Ending War</strong
+          >
+        </h1>
+        <div class="post__wrapper-img">
+          <img src="assets/images/4.webp" alt="" />
+        </div>
+        <div class="page__wrapper-content">
+          <p>
+            The fight for the Black Sea port could influence the outcome of the
+            war and affect regional security, experts say.
+          </p>
+          <p>
+            Two weeks into Russia’s war in Ukraine, Kyiv’s forces are preparing
+            for a potential attack by Moscow’s troops on the historic port city
+            of Odesa on the Black Sea.
+          </p>
+          <p>
+            Situated 300km (186 miles) west of the Russian-annexed Crimean
+            peninsula, the city is seen as a strategic asset by both Ukraine and
+            Russia – and its fall would have significant repercussions, not only
+            for the two countries, but also for the wider Black Sea region,
+            experts warn.
+          </p>
+          <p>
+            Russian troops, advancing west of Crimea, have already taken the
+            port city of Kherson and arrived at Mykolaiv, just 120km (75 miles)
+            east of Odesa. Russian navy ships have been spotted close to
+            Ukrainian territorial waters, raising fears of a possible attack
+            from the sea.
+          </p>
+          <p>
+            On Sunday, Ukrainian President Volodymyr Zelenskyy said the Russian
+            army is planning a violent assault on the city, calling it an
+            “historical crime”. Earlier last week, he dismissed the civilian
+            governor of Odesa province, Serhiy Hrynevetsky, and replaced him
+            with Maksym Marchenko, an army colonel and former leader of the
+            controversial Aidar battalion, which has fought in the Donbas region
+            in Ukraine’s east since 2014.
+          </p>
+          <p>
+            The Ukrainian military has already established defensive positions
+            across Odesa, imposed a curfew and set up roadblocks at all
+            entrances to the city of one million people. The ports have been
+            closed to commercial shipping, while the evacuation of civilians has
+            begun.
+          </p>
+          <h3>‘A pivotal lifeline to overseas’</h3>
+          <p>
+            Odesa is of strategic military and economic importance to Ukraine.
+            After losing its naval base in Sevastopol following the annexation
+            of Crimea in 2014, the Ukrainian navy moved its headquarters there.
+          </p>
+          <p>
+            Its three ports also play an important role in the economy of the
+            country. Some 70 percent of all Ukrainian imports and exports are in
+            the form of sea cargo – and Odesa handles about 65 percent of that.
+          </p>
+          <br />
+          <p>
+            “[For Ukraine,] Odesa represents a pivotal lifeline to overseas,”
+            Alexey Muraviev, associate professor of national security and
+            strategic studies at Curtin University, told Al Jazeera. “If Russia
+            seizes Odesa, it will effectively cut off Ukraine from overseas
+            trade and military aid.”
+          </p>
+          <p>
+            The loss of the port city could have significant ramifications for
+            Ukraine and its war effort and give Russia a strategic advantage.
+            Ukraine does not have any other large ports to rely on in case it
+            loses control of its third largest city, allowing Russia to
+            effectively dominate the whole of the northern Black Sea coast.
+          </p>
+          <p>
+            “In the context of the Russia-Ukraine war, the battle for Odesa
+            would play one of the key roles in determining the future political
+            outcome of the current conflict,” Muraviev said. “For Russia, the
+            complete control of the Ukraine’s Black Sea and the Sea of Azov
+            coasts may [be more important] than the seizure of Kharkiv or
+            western Ukraine combined.”
+          </p>
+          <h3>‘They want Odesa intact’</h3>
+          <p>
+            Capturing Odesa would also have a particular symbolic significance,
+            given the important status it holds in Russian culture and history.
+          </p>
+          <p>
+            Founded in 1794 by Russian Empress Catherine the Great, Odesa became
+            a crucial seaport and a cosmopolitan urban centre, home not only to
+            Russians and Ukrainians, but also to Armenian, Bulgarian, Greek,
+            Jewish and other communities. With its ornate architecture designed
+            by Italian artists and rich cultural life, the city turned into one
+            of the symbols of Russian imperial prestige and power.
+          </p>
+          <p>
+            The local authorities have expressed hope that the port city’s
+            historical importance could spare it from the destructive aerial
+            assaults other Ukrainian cities have experienced.
+          </p>
+          <p>
+            “They want Odesa intact, Odesa’s infrastructure, architecture and
+            strategic meaning. They want all of those undamaged. That’s why I
+            think Odesa will be subject to a special operation,” Mayor Gennadiy
+            Trukhanov told the US’s Public Broadcasting Service.
+          </p>
+          <p>
+            The city is also home to a sizeable ethnic Russian community, a
+            factor that some Russian observers have claimed could help a
+            military attempt to capture the city.
+          </p>
+        </div>
+      </section>
     </div>
-    <footer class="flex__col ">
-        <div class="footer__catagory flex__row">
-            <div class="footer__catagory-item flex__col">
-                <div class="flex__row">
-                    <h4>NEWS</h4>
-                    <div class="catagory__btns">
-                        <i class="fa-solid fa-minus" id="news-btn-close" style="display: none;"></i>
-                        <i class="fa-solid fa-plus" id="news-btn"></i>
-                    </div>
-                </div>
-                <ul class="flex__col catagory__item" id="catagory-news">
-                    <li><a href="#">Home Page</a></li>
-                    <li><a href="#">World</a></li>
-                    <li><a href="#">Coronavirus</a></li>
-                    <li><a href="#">U.S.</a></li>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">New York</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Tech</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Winter Olympics</a></li>
-                    <li><a href="#">Wildfire Tracker</a></li>
-                    <li><a href="#">Obituaries</a></li>
-                    <li><a href="#">Today's Paper</a></li>
-                    <li><a href="#">Corrections</a></li>
-                    <li><a href="#">Trending</a></li>
-                </ul>
+    <footer class="flex__col">
+      <div class="footer__catagory flex__row">
+        <div class="footer__catagory-item flex__col">
+          <div class="flex__row">
+            <h4>NEWS</h4>
+            <div class="catagory__btns">
+              <i
+                class="fa-solid fa-minus"
+                id="news-btn-close"
+                style="display: none"
+              ></i>
+              <i class="fa-solid fa-plus" id="news-btn"></i>
             </div>
-            <div class="footer__catagory-item flex__col">
-                <div class="flex__row">
-                    <h4>OPINION</h4>
-                    <div class="catagory__btns">
-                        <i class="fa-solid fa-minus" id="opinion-btn-close" style="display: none;"></i>
-                        <i class="fa-solid fa-plus" id="opinion-btn"></i>
-                    </div>    
-                </div>
-                <ul class="flex__col catagory__item"  id="catagory-opinion">
-                    <li><a href="#">Columnists</a></li>
-                    <li><a href="#">Editorials</a></li>
-                    <li><a href="#">Guest Essays</a></li>
-                    <li><a href="#">Letters</a></li>
-                    <li><a href="#">Sunday Review</a></li>
-                    <li><a href="#">Today's Opinion</a></li>
-                    <li><a href="#">Opinion Video</a></li>
-                </ul>
-            </div>
-            <div class="footer__catagory-item flex__col">
-                <div class="flex__row">
-                    <h4>ARTS</h4>
-                    <div class="catagory__btns">
-                        <i class="fa-solid fa-minus" id="arts-btn-close" style="display: none;"></i>
-                        <i class="fa-solid fa-plus" id="arts-btn"></i>
-                    </div>
-                </div>
-                <ul class="flex__col catagory__item"  id="catagory-arts">
-                    <li><a href="#">Today's Arts</a></li>
-                    <li><a href="#">Art & Design</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">Best Sellers Book List</a></li>
-                    <li><a href="#">Dance</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Pop Culture</a></li>
-                    <li><a href="#">Television</a></li>
-                    <li><a href="#">Theater</a></li>
-                    <li><a href="#">Video: Arts</a></li>
-
-                </ul>
-            </div>
-            <div class="footer__catagory-item flex__col">
-                <div class="flex__row">
-                    <h4>LIVING</h4>
-                    <div class="catagory__btns">
-                        <i class="fa-solid fa-minus" id="living-btn-close" style="display: none;"></i>
-                        <i class="fa-solid fa-plus" id="living-btn"></i>
-                    </div>
-                </div>
-                <ul class="flex__col catagory__item"  id="catagory-living">
-                    <li><a href="#">Automotive</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Food</a></li>
-                    <li><a href="#">Health</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Love</a></li>
-                    <li><a href="#">Magazine</a></li>
-                    <li><a href="#">Parenting</a></li>
-                    <li><a href="#">Real Estate</a></li>
-                    <li><a href="#">Style</a></li>
-                    <li><a href="#">T Magazine</a></li>
-                    <li><a href="#">Travel</a></li>
-                </ul>
-            </div>
+          </div>
+          <ul class="flex__col catagory__item" id="catagory-news">
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Coronavirus</a></li>
+            <li><a href="#">U.S.</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Winter Olympics</a></li>
+            <li><a href="#">Wildfire Tracker</a></li>
+            <li><a href="#">Obituaries</a></li>
+            <li><a href="#">Today's Paper</a></li>
+            <li><a href="#">Corrections</a></li>
+            <li><a href="#">Trending</a></li>
+          </ul>
         </div>
-        <div class='credits'>
-            <p>developed by</p>
-            <h4 idName='credits__author'>
-                <a href='https://www.instagram.com/sr.dragonfang'>
-                    S.R Dragonfang
-                </a>
-            </h4>
-            <h4>Sokunmaru Group | ©2022</h4>
+        <div class="footer__catagory-item flex__col">
+          <div class="flex__row">
+            <h4>OPINION</h4>
+            <div class="catagory__btns">
+              <i
+                class="fa-solid fa-minus"
+                id="opinion-btn-close"
+                style="display: none"
+              ></i>
+              <i class="fa-solid fa-plus" id="opinion-btn"></i>
+            </div>
+          </div>
+          <ul class="flex__col catagory__item" id="catagory-opinion">
+            <li><a href="#">Columnists</a></li>
+            <li><a href="#">Editorials</a></li>
+            <li><a href="#">Guest Essays</a></li>
+            <li><a href="#">Letters</a></li>
+            <li><a href="#">Sunday Review</a></li>
+            <li><a href="#">Today's Opinion</a></li>
+            <li><a href="#">Opinion Video</a></li>
+          </ul>
         </div>
+        <div class="footer__catagory-item flex__col">
+          <div class="flex__row">
+            <h4>ARTS</h4>
+            <div class="catagory__btns">
+              <i
+                class="fa-solid fa-minus"
+                id="arts-btn-close"
+                style="display: none"
+              ></i>
+              <i class="fa-solid fa-plus" id="arts-btn"></i>
+            </div>
+          </div>
+          <ul class="flex__col catagory__item" id="catagory-arts">
+            <li><a href="#">Today's Arts</a></li>
+            <li><a href="#">Art & Design</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Best Sellers Book List</a></li>
+            <li><a href="#">Dance</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Pop Culture</a></li>
+            <li><a href="#">Television</a></li>
+            <li><a href="#">Theater</a></li>
+            <li><a href="#">Video: Arts</a></li>
+          </ul>
+        </div>
+        <div class="footer__catagory-item flex__col">
+          <div class="flex__row">
+            <h4>LIVING</h4>
+            <div class="catagory__btns">
+              <i
+                class="fa-solid fa-minus"
+                id="living-btn-close"
+                style="display: none"
+              ></i>
+              <i class="fa-solid fa-plus" id="living-btn"></i>
+            </div>
+          </div>
+          <ul class="flex__col catagory__item" id="catagory-living">
+            <li><a href="#">Automotive</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Love</a></li>
+            <li><a href="#">Magazine</a></li>
+            <li><a href="#">Parenting</a></li>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Style</a></li>
+            <li><a href="#">T Magazine</a></li>
+            <li><a href="#">Travel</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="credits">
+        <p>developed by</p>
+        <h4 idName="credits__author">
+          <a href="https://www.instagram.com/sr.dragonfang"> S.R Dragonfang </a>
+        </h4>
+        <h4>Sokunmaru Group | ©2022</h4>
+      </div>
     </footer>
-</body>
-<script src="assets/js/main.js"></script>
-
+  </body>
+  <script src="assets/js/main.js"></script>
 </html>
