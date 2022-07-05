@@ -1,6 +1,6 @@
 /* ====================[START >>> header]==================== */
 .header {
-  padding: 1rem 3rem;
+  padding: 5rem 3rem 1rem;
   justify-content: space-between;
   width: 100%;
   background: var(--clr-light);
@@ -13,11 +13,12 @@
 }
 @media screen and (max-width: 1050px) {
   .header {
+    margin-top: 3rem;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0.5rem 1rem;
+    padding: 3rem 1rem 0.5rem;
     max-height: 50px;
     flex-direction: row;
   }
@@ -215,7 +216,6 @@
 
 .headline__bottom ul li {
   min-width: 250px;
-  height: 100px;
   border-right: 1px solid var(--clr-dark);
 }
 
