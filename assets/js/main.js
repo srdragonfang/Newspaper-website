@@ -70,72 +70,29 @@ function scrollTop() {
     else scrollTop.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollTop);
-// --------------
-const catagoryNews = document.getElementById("catagory-news");
-const btnNews = document.getElementById("news-btn");
-const btnNewsClose = document.getElementById("news-btn-close");
-if (btnNews) {
-    btnNews.addEventListener("click", () => {
-        catagoryNews.style.display = "flex";
-        btnNews.style.display = "none";
-        btnNewsClose.style.display = "flex";
-    });
-}
-if (btnNewsClose) {
-    btnNewsClose.addEventListener("click", () => {
-        catagoryNews.style.display = "none";
-        btnNews.style.display = "flex";
-        btnNewsClose.style.display = "none";
-    });
-}
-const catagoryArts = document.getElementById("catagory-arts");
-const btnArts = document.getElementById("arts-btn");
-const btnArtsClose = document.getElementById("arts-btn-close");
-if (btnArts) {
-    btnArts.addEventListener("click", () => {
-        catagoryArts.style.display = "flex";
-        btnArts.style.display = "none";
-        btnArtsClose.style.display = "flex";
-    });
-}
-if (btnArtsClose) {
-    btnArtsClose.addEventListener("click", () => {
-        catagoryArts.style.display = "none";
-        btnArts.style.display = "flex";
-        btnArtsClose.style.display = "none";
-    });
-}
-const catagoryLiving = document.getElementById("catagory-living");
-const btnLiving = document.getElementById("living-btn");
-const btnLivingClose = document.getElementById("living-btn-close");
-if (btnLiving) {
-    btnLiving.addEventListener("click", () => {
-        catagoryLiving.style.display = "flex";
-        btnLiving.style.display = "none";
-        btnLivingClose.style.display = "flex";
-    });
-}
-if (btnLivingClose) {
-    btnLivingClose.addEventListener("click", () => {
-        catagoryLiving.style.display = "none";
-        btnLiving.style.display = "flex";
-        btnLivingClose.style.display = "none";
-    });
-}
-const catagoryOpinion = document.getElementById("catagory-opinion");
-const btnOpinion = document.getElementById("opinion-btn");
-const btnOpinionClose = document.getElementById("opinion-btn-close");
-if (btnOpinion) {
-    btnOpinion.addEventListener("click", () => {
-        catagoryOpinion.style.display = "flex";
-        btnOpinion.style.display = "none";
-        btnOpinionClose.style.display = "flex";
-    });
-}
-if (btnOpinionClose) {
-    btnOpinionClose.addEventListener("click", () => {
-        catagoryOpinion.style.display = "none";
-        btnOpinion.style.display = "flex";
-        btnOpinionClose.style.display = "none";
-    });
-}
+
+/*==================== NEWS OPTIONS ====================*/
+
+const btnOptions = document.querySelectorAll('.btn-option')
+const btnCloseOptions = document.querySelectorAll('.btn-close-option')
+const catagoryItems = document.querySelectorAll('.catagory__item')
+console.log(catagoryItems)
+btnOptions.forEach((btnOption, index) => {
+        btnOption.addEventListener('click', () => {
+                catagoryItems.forEach((catagoryItem) => {
+                    catagoryItem.style.display = "none"
+                })
+                catagoryItems[index].style.display = "flex"
+                btnOption.style.display = "none";
+                btnCloseOptions[index].style.display = "flex";
+        })
+
+})           
+btnCloseOptions.forEach((btnCloseOption, index) => {
+    btnCloseOption.addEventListener('click', () => {
+            catagoryItems[index].style.display = "none"
+            btnCloseOption.style.display = "none";
+            btnOptions[index].style.display = "flex";
+    })
+
+})      
